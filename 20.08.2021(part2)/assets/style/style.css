@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.cont-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+a {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+a:hover {
+  background: yellow;
+  color: white;
+}
+
+.mainMenu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.mainMenu li {
+  margin-right: 20px;
+}
+.mobileMenu {
+  display: none;
+  width: 50px;
+  height: 50px;
+  color: white;
+  background: tomato;
+  font-size: 1.5rem;
+}
+.close {
+  display: none;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+}
+
+.restaurant-app {
+  background-image: url("../img/backrest-app.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 0 178px;
+}
+
+.restapp {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  color: #f7f7f7;
+  margin-bottom: 10px;
+}
+
+.restapp-title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 58px;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  margin: 15px auto;
+  max-width: 799px;
+}
+.restapp-about {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.2px;
+  color: #f7f7f7;
+  margin-bottom: 78px;
+}
+
+.button-container {
+  padding-top: 59px;
+  margin: 0 5px;
+}
+.button-style-1,
+.button-style-2,
+.button-style-3,
+.button-style-4 {
+  margin: 20px;
+  padding: 20px;
+  color: white;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  width: 236px;
+}
+
+.button-style-1 {
+  background: #fa4a0c;
+  border: none;
+}
+
+.button-style-2 {
+  background: none;
+  border: 1px solid white;
+}
+.mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 142px;
+}
+.mobileHead {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  color: #fa4a0c;
+}
+
+.mobileTitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+  max-width: 561px;
+}
+.mobileText {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin: 27px 0;
+  max-width: 467px;
+}
+.orderCont {
+  background-image: url(../img/back-order.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 147px 131px;
+  margin-top: 142px;
+}
+.orderTitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+.orderAbout {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  padding-top: 20px;
+}
+
+.button-container-order {
+  padding-top: 59px;
+  margin: 0 5px;
+}
+.button-style-3 {
+  background: #fa4a0c;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.button-style-4 {
+  background: none;
+  border: 1px solid white;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  padding: 18px;
+}
+
+.footer-container {
+  max-width: 1210px;
+  margin: 0 auto;
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .cont-flex {
+    align-items: center;
+    justify-content: space-between;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .button-style-2 {
+    background: white;
+    border: 2px solid #fa4a0c;
+    color: #fa4a0c;
+  }
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    transform: translate(0, -10%);
+    text-align: center;
+    align-items: center;
+    max-width: 300px;
+  }
+  .mobile img {
+    max-width: 200px;
+    max-height: 400px;
+  }
+  .restaurant-app {
+    background: white;
+  }
+  .restapp {
+    color: darkblue;
+    font-size: 20px;
+  }
+  .restapp-title {
+    color: darkblue;
+    font-size: 35px;
+  }
+  .restapp-about {
+    color: darkblue;
+    font-size: 15px;
+  }
+  .orderCont {
+    background: #252b42;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .button-container-order {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-flex {
+    display: flex;
+    justify-content: center;
+  }
+  footer p {
+    color: black;
+  }
+  .mainMenu {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .close {
+    display: none;
+  }
+  .showMenu {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+}
